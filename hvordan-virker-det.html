@@ -58,40 +58,40 @@
 <p data-lorem-editable="" data-lorem-element="56b07cf4f9e5720300232f71">Når mailen har været igennem alle regler og tests har den en endelig score, som sammenlignes med en af vores 2 definerede grænser. Er mailens spam score lavere end grænse 1, sendes den videre til kunden uændret. Ligger spam scoren mellem grænse 1 og grænse 2 klassificeres den som mulig spam. Dette resulterer i at mailens emnefelt får indsat *** MULIG SPAM *** og en spam header så kundens system kan indstilles til at placere den i junk-mail mappen eller eventuelt slettes. Hvis mailens spamscore er over grænse 2 blokeres den og arkiveres på Mailscan.nu´s servere. Herfra kan kunden vælge om mailen skal frigives.</p>
 <p data-lorem-editable="" data-lorem-element="56b07cf4f9e5720300232f76">Kunden kan via webinterface eller statusmail, se en oversigt over alle mails, der bliver blokeret af Mailscan.nu.</p>
 <p data-lorem-editable="" data-lorem-element="56b07cf4f9e5720300232f78">Mailscan.nu´s del-test kan inddeles i følgende kategorier:</p>
+<strong data-lorem-editable>White og Blacklists</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf4f9e5720300232f7b">
-<strong>White og Blacklists</strong><br>
 Mailscan.nu indleder med at slå afsenderens ip-adresse op i diverse online databaser over kendte spam afsendere. Mailscan.nu kontrollerer både black- og whitelists. Det vil sige dels lister over kendte spam afsendere og kendte gyldige afsendere. Derved sorterer Mailscan.nu ikke blot i vores opslags kontrol, men opprioriterer også kendte afsendere, og mindsker dermed sandsynligheden for at valide mails bliver blokeret.
 </p>
+<strong data-lorem-editable>Tekst analyse</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf5f9e5720300232f80">
-<strong>Tekst analyse</strong><br>
 Mailscan.nu udfører en mængde tekst analyser på indholdet i mailen. Mailscan.nu opdaterer løbende for derved, så vidt muligt altid at være tilpasset de nyeste tendenser indenfor spam. Mailscan.nu leder dels efter specifikke ord, men kontrollerer også for bestemte fraser og kombinationer af ord. Ligeledes undersøges opbygningen af mailen. Det vil sige layout og opsætning i mailen. Der er typisk generelle forskelle på, hvordan en spam mail ser ud, og hvordan en normal mail ser ud.
 </p>
+<strong data-lorem-editable>Bayesisk analyse</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf5f9e5720300232f84">
-<strong>Bayesisk analyse</strong><br>
 Bayesisk analyse er en matematisk metode fra sandsynligheds teori, der gør det muligt at klassificere materiale udfra en statistisk analyse. Kort fortalt går det ud på at analysere en stor mængde af det materiale du vil undersøge (mail i vores tilfælde). Når du har analyseret en tilpas stor mængde mails for deres karakteristika kan du bruge disse analyser som beslutningsgrundlag for at afgøre fremtidige mail. F.eks: 10000 mail analyseres. 8500 af mailene indeholdt ordet viagra. Af disse 8500 var 8491 spam mails. Dette betyder at mail, der indeholder ordet viagra med en bestemt sandsynlighed er en spam mail. Når man analysere en mail i sin helhed, giver denne metode et yderst nøjagtigt billede af om en mail er spam eller ham.
 </p>
+<strong data-lorem-editable>Checksum sammenligning</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf7f9e5720300232f86">
-<strong>Checksum sammenligning</strong><br>
 Med checksum sammenligning udfører Mailscan.nu en matematisk beregning på en mail og får derigennem et tal der repræsenterer mailen. To forskellige mail vil inden for rimelig sandsynlighed aldrig give det samme tal. Når talet er fundet, sammenlignes det med online databaser over kendte spam mails. Grunden til at Mailscan.nu ikke sammenligner mails i sin helhed er, at det ville optage en kollosal mængde plads og bruge en kollosal mængde trafik, hvilket ville resultere i meget langsomme systemer. Men kort sagt sammenligner Mailscan.nu mailen med kendte spam mails, og hvis mailen er blevet indrapportere som spam af en anden modtager, bliver mailens spamscore forhøjet betydeligt.
 </p>
+<strong data-lorem-editable>URL kontrol</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf8f9e5720300232f88">
-<strong>URL kontrol</strong><br>
 Mange spam mails indeholder links til hjemmesider med reklamer og i nogle tilfælde spyware og virus. Ligesom der findes lister over spam afsendere, findes der databaser med lister over kendte spam websites. Mailscan.nu kontrollerer alle mails med links op mod disse databaser. Hvis mailen indeholder et link, der er kendt for at blive brugt af spammere, bliver dens spamscore forhøjet.
 </p>
+<strong data-lorem-editable>Anti phishing</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf8f9e5720300232f8a">
-<strong>Anti phishing</strong><br>
 Phishing kunne oversættes til netsvindel. Phishing mails er mails, der udgiver sig for at være fra kendte virksomheder og organisationer. Eksempelvis kan man modtage en mail, der ser ud til at komme fra Danske Bank, med deres logo, deres form for ord valg osv. De beder eksempelvis modtageren af mailen om at gå ind og ændre sit password til netbank. I dette eksempel kan det vise sig, at mailen ikke er fra Danske bank, men derimod fra svindlere, der prøver at lokke indformationer ud af modtageren. Typisk går de efter adgangskoder eller kreditkort informationer. Mailen indeholder typisk et link til en hjemmeside, der er maskeret til at ligne det rigtige firma’s hjemmeside. Mailscan.nu kontrollere løbende mails for phishing tegn. Blandt andet afvæbnes links der linker til en anden side end brugeren lades til at tro, og en advarsel indsættes. Derudover kontrollerer Mailscan.nu alle links op mod databaser med kendte phishing websider.
 </p>
+<strong data-lorem-editable>Billede analyse</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf8f9e5720300232f8c">
-<strong>Billede analyse</strong><br>
 I dag sendes en stor del af spam som billeder, der indeholder reklame tekst, hvilket gør, at man ikke altid kan udsætte dem for normal tekst kontrol. Mailscan.nu omgår dette ved at lave OCR analyse på alle billeder inkluderet i mailene. OCR analyse kendes blandt andet fra indscanning af dokumenter fra en scanner. Mailscan.nu anvender samme teknik. Mailscan.nu forsøger at omdanne billeder til tekst og kører derefter den normale tekst-kontrol, som beskrevet på denne side.
 </p>
+<strong data-lorem-editable>Anti-virus</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf9f9e5720300232f8e">
-<strong>Anti-virus</strong><br>
 Mailscan.nu indhenter 24 timer i døgnet løbende informationer om nye virus-trusler. I samarbejde med en lang række udbydere af virusscannere over hele verden vil Mailscan.nu i løbet af kort tid kunne genkende eventuelle virus angreb. Mailscan.nu kan bruge op til 30 forskellige virusscannere, og kan således tilbyde modtageren den bedst mulige sikring mod virus.
 </p>
+<strong data-lorem-editable>Vedhæftninger</strong>
 <p data-lorem-editable="" data-lorem-element="56b07cf9f9e5720300232f90">
-<strong>Vedhæftninger</strong><br>
 Mailscan.nu kontroller både fil-typen og filnavnet på de vedlagte filer i mailen. Mailscan.nu kan kontrollerer efter hvilken som helst fil-type og filnavn, og er filtypen eller navnet kendt for at være spam eller virus, sættes mailen i karantæne. Mailscan.nu kontrollerer også om mailen indeholder skadelig HTML kode.
 </p>
         </article>
