@@ -51,7 +51,7 @@
       </div>
       <div class="col-md-9">
         <article>
-<h4 class="lead">Hvordan virker Mailscan.nu?</h4>
+<h4 class="lead">Hvordan virker Mailscan?</h4>
 <p>Mailscan.nu fungerer ved hjælp af et vægtet point system, der afgør om en mail er ønsket eller ej (spam eller ham). Herved har kunden størst mulig sikkerhed for at Mailscan.nu ikke blokerer mails, kunden gerne vil modtage.</p>
 <p>Mailscan.nu afgør om en mails skal blokeres eller ej ved hjælp af en række del-tests. Er et firma eksempelvis fejlagtigt havnet i en af de blacklists, som Mailscan.nu bruger, betyder det ikke nødvendigvis at mails fra dette firma bliver blokeret. Mailscan.nu´s pointsystem gør at mailen skal aktivere flere antispam regler for at blive blokeret.</p>
 <p>Hvis en mail aktiverer en af de mange del regler i systemet, lægges der point til mailens samlede spam score. Jo højere en score, jo mere sandsynligt er det, at mailen er en spam mail. Ligeledes resulterer whitelists og andre positive regler i, at der bliver trukket points fra mailens spam score.</p>
@@ -59,8 +59,7 @@
 <p>Kunden kan via webinterface eller statusmail, se en oversigt over alle mails, der bliver blokeret af Mailscan.nu.</p>
 <p>Mailscan.nu´s del-test kan inddeles i følgende kategorier:</p>
 <strong>White og Blacklists</strong>
-<p>
-Mailscan.nu indleder med at slå afsenderens ip-adresse op i diverse online databaser over kendte spam afsendere. Mailscan.nu kontrollerer både black- og whitelists. Det vil sige dels lister over kendte spam afsendere og kendte gyldige afsendere. Derved sorterer Mailscan.nu ikke blot i vores opslags kontrol, men opprioriterer også kendte afsendere, og mindsker dermed sandsynligheden for at valide mails bliver blokeret.
+<p>Mailscan indleder med at slå afsenderens ip-adresse op i diverse online databaser over kendte spam afsendere. Mailscan.nu kontrollerer både black- og whitelists. Det vil sige dels lister over kendte spam afsendere og kendte gyldige afsendere. Derved sorterer Mailscan.nu ikke blot i vores opslags kontrol, men opprioriterer også kendte afsendere, og mindsker dermed sandsynligheden for at valide mails bliver blokeret.
 </p>
 <strong>Tekst analyse</strong>
 <p>
@@ -74,7 +73,7 @@ Bayesisk analyse er en matematisk metode fra sandsynligheds teori, der gør det 
 <p>
 Med checksum sammenligning udfører Mailscan.nu en matematisk beregning på en mail og får derigennem et tal der repræsenterer mailen. To forskellige mail vil inden for rimelig sandsynlighed aldrig give det samme tal. Når talet er fundet, sammenlignes det med online databaser over kendte spam mails. Grunden til at Mailscan.nu ikke sammenligner mails i sin helhed er, at det ville optage en kollosal mængde plads og bruge en kollosal mængde trafik, hvilket ville resultere i meget langsomme systemer. Men kort sagt sammenligner Mailscan.nu mailen med kendte spam mails, og hvis mailen er blevet indrapportere som spam af en anden modtager, bliver mailens spamscore forhøjet betydeligt.
 </p>
-<strong>URL kontrol</strong>
+<p data-test="hello world">Is this <b>thing</b> on?</p>
 <p>
 Mange spam mails indeholder links til hjemmesider med reklamer og i nogle tilfælde spyware og virus. Ligesom der findes lister over spam afsendere, findes der databaser med lister over kendte spam websites. Mailscan.nu kontrollerer alle mails med links op mod disse databaser. Hvis mailen indeholder et link, der er kendt for at blive brugt af spammere, bliver dens spamscore forhøjet.
 </p>
